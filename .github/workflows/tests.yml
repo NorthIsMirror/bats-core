@@ -197,7 +197,7 @@ jobs:
           - ""
     steps:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
-      - uses: vmactions/freebsd-vm@9991fc3550abdc19b61d50063c7eeb7713bc498f # v0.3.1
+      - uses: vmactions/freebsd-vm@d44bf830e7d850111d27aa120d468c905e5980f4 # v1.0.0
         with:
           prepare: pkg install -y bash parallel ${{ matrix.packages }}
           run: |
